@@ -33,13 +33,13 @@ int countPairs3(int *arr, int len, int value) {
         mid = (left + right) / 2;
         if (arr[mid] < x) {
             left = mid + 1;
-	} else if (arr[mid] > x) {
+        } else if (arr[mid] > x) {
             right = mid - 1;
-	} else {
-            count ++;
+        } else {
+            count++;
             int min = mid - 1;
             int max = mid + 1;
-            while ((arr[mid] == arr[min]) && min>i) {
+            while ((arr[mid] == arr[min]) && min > i) {
                 count++;
                 min--;
             }
